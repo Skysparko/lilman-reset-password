@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LilMan-ResetPassword</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Reset password</h1>
+    <form>
+      <span class="passwordContainer">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="password" />
+      </span>
+
+      <span class="passwordContainer">
+        <label for="confirm-password">Confirm password</label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          class="password"
+        />
+      </span>
+      <span>
+        <input type="checkbox" name="show-password" id="show-password" />
+        <label for="show-password">Show password</label>
+      </span>
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
