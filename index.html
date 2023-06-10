@@ -6,10 +6,11 @@
     <title>LilMan-ResetPassword</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@11.0.0"></script>
   </head>
   <body>
     <h1>Reset password</h1>
-    <form>
+    <form id="form">
       <span class="passwordContainer">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" class="password" />
@@ -28,7 +29,7 @@
         <input type="checkbox" name="show-password" id="show-password" />
         <label for="show-password">Show password</label>
       </span>
-      <button type="submit">Submit</button>
+      <button type="submit" id="submit">Submit</button>
     </form>
     <div>
       <div class="wave"></div>
