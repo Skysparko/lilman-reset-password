@@ -76,6 +76,11 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #box{
+        width: 300px !important;
+    }
+  }
 
 @media only screen and (max-width: 400px) {
     h1{
@@ -85,12 +90,20 @@ body {
         padding: 50px 30px !important;
 
     }
+    #box{
+        padding:50px 30px !important;
+
+    }
   }
 
   @media only screen and (max-width: 350px) {
     
     form{
         padding: 50px 20px !important;
+
+    }
+    #box{
+        width: 200px !important;
 
     }
   }
@@ -133,6 +146,16 @@ button{
     box-shadow: 2px 2px 5px gray ;
 }
 
+#lilman-button{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(90, 0, 90),rgb(168, 0, 173));
+    color:white;
+    box-shadow: 2px 2px 5px gray ;
+    text-align: center;
+}
+
 .password{
     padding: 10px;
     font-size: 20px;
@@ -152,3 +175,17 @@ h1{
     flex-direction: column;
     gap: 10px;
 }
+
+#box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 50px;
+    gap:10px;
+    border-radius: 20px;
+    background-color: white;
+    color:black;
+    box-shadow: 4px 4px 10px rgb(63, 63, 63) ;
+    width: 400px;
+}
+

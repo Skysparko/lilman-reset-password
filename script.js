@@ -40,16 +40,16 @@ form.addEventListener("submit", async (e) => {
       alert("Passwords do not match");
       return;
     }
-    // console.log(userId, secret, password.value, confirmPassword.value);
-    // const res = await account.updateRecovery(
-    //   userId,
-    //   secret,
-    //   password.value,
-    //   confirmPassword.value
-    // );
-    // if (res.status === 200) {
-    location.href = "/completed.html";
-    // }
+    console.log(userId, secret, password.value, confirmPassword.value);
+    const res = await account.updateRecovery(
+      userId,
+      secret,
+      password.value,
+      confirmPassword.value
+    );
+    if (res.status === 200) {
+      location.href = "/completed.html";
+    }
   } catch (error) {
     alert(error);
   }

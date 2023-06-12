@@ -3,10 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lilman-passwordCompleted</title>
+    <title>LilMan-Redirect</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@11.0.0"></script>
   </head>
   <body>
-    <h1>lilman-passwordCompleted</h1>
-    <a href="lilman://home">click here to go to your app</a>
+    <div id="box">
+      <h1 style="text-shadow: 2px 2px 2px gray">Password Changed</h1>
+      <p>
+        Your Password have successfully Changed Click on Lilman button to go
+        back to app
+      </p>
+
+      <a
+        href="lilman://home"
+        style="color: white; text-decoration: none"
+        id="lilman-button"
+        >Lilman</a
+      >
+    </div>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
