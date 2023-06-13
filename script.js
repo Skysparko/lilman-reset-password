@@ -8,6 +8,7 @@ const showPassword = document.getElementById("show-password");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm-password");
 const form = document.getElementById("form");
+const submitButton = document.getElementById("submit");
 
 let userId;
 let secret;
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 form.addEventListener("submit", async (e) => {
   try {
+    submitButton.textContent = "Submitting...";
     e.preventDefault();
     if (password.value !== confirmPassword.value) {
       alert("Passwords do not match");
@@ -47,10 +49,13 @@ form.addEventListener("submit", async (e) => {
       password.value,
       confirmPassword.value
     );
+    submitButton.textContent = "Submit";
     console.log(res);
 
     location.href = "/completed.html";
   } catch (error) {
+    submitButton.textContent = "Submit";
+
     alert(error);
   }
 });
