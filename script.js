@@ -47,9 +47,9 @@ form.addEventListener("submit", async (e) => {
       password.value,
       confirmPassword.value
     );
-    if (res.status === 200) {
-      location.href = "/completed.html";
-    }
+    console.log(res);
+
+    location.href = "/completed.html";
   } catch (error) {
     alert(error);
   }
