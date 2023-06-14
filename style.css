@@ -126,11 +126,26 @@ form{
     flex-direction: column;
     border: 2px solid gray;
     padding: 50px;
-    gap:30px;
+    
     border-radius: 20px;
     background-color: white;
     color:black;
     box-shadow: 4px 4px 10px rgb(63, 63, 63) ;
+}
+
+.container{
+    margin:20px 0px;
+}
+
+.showPassword{
+    margin-bottom: 20px;
+}
+
+#password{
+    margin-Top: 10px;
+}
+#confirm-password{
+    margin-Top: 10px;
 }
 
 label{
@@ -173,7 +188,7 @@ h1{
 .passwordContainer{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
 }
 
 #box{
@@ -181,11 +196,15 @@ h1{
     flex-direction: column;
     border: 2px solid gray;
     padding: 50px;
-    gap:10px;
+  
     border-radius: 20px;
     background-color: white;
     color:black;
     box-shadow: 4px 4px 10px rgb(63, 63, 63) ;
     width: 400px;
+}
+
+#item{
+    margin:10px 0px;
 }
 
